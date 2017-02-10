@@ -11,6 +11,8 @@ Done!
 
 #Setup
 
+The addin is prepared to use in a Xamarin Mac application (or any kind of project) with a /Info.plist file with the **BundleIdentifier** key.
+
 Press Menu > View 
 
 ##ShowAllViews
