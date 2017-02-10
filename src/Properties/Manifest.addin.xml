@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+	<Runtime>
+	</Runtime>
+	<Extension path = "/MonoDevelop/Ide/MainMenu/View">
+		<Condition id="Platform" value="!windows">
+			<CommandItem id = "MonoDevelop.Debug.CocoaLayout.ShowAllViews" />
+			<CommandItem id = "MonoDevelop.Debug.CocoaLayout.VisualizeConstraints" />
+		</Condition>
+	</Extension>
+	<Extension path = "/MonoDevelop/Ide/ContextMenu/ProjectPad">
+		<Condition id="Platform" value="!windows">
+			<CommandItem id = "MonoDevelop.Debug.CocoaLayout.ShowAllViews" />
+			<CommandItem id = "MonoDevelop.Debug.CocoaLayout.VisualizeConstraints" />
+		</Condition>
+	</Extension>
+	<Extension path = "/MonoDevelop/Ide/Commands">
+		<Command id = "MonoDevelop.Debug.CocoaLayout.ShowAllViews"
+				defaultHandler = "MonoDevelop.Debug.CocoaLayout.ShowAllViewsCommandHandler"
+				_label = "Show All Views"
+				shortcut = "Alt|Shift|9"
+				macShortcut = "Alt|Shift|9"
+				/>
+		<Command id = "MonoDevelop.Debug.CocoaLayout.VisualizeConstraints"
+				defaultHandler = "MonoDevelop.Debug.CocoaLayout.VisualizeConstraintsCommandHandler"
+				_label = "Visualize Mutually Exclusive Constraints"
+				shortcut = "Alt|Shift|0"
+				macShortcut = "Alt|Shift|0"
+				/>
+	</Extension>
+</ExtensionModel>
